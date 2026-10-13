@@ -1,0 +1,26 @@
+/* index.css */
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --app-gradient: linear-gradient(160deg, #7B94AC, #B3C4D6); /* fallback until first fetch resolves */
+}
+
+html, body, #root {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background: var(--app-gradient);
+    transition: background 1.2s ease;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', 'Segoe UI', sans-serif;
+    color: #fff;
+}
